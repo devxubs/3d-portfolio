@@ -4,7 +4,7 @@ This repository contains the source code for my personal 3D portfolio website, b
 
 ## Live Website
 
-**Portfolio:** https://hxnix-gold.vercel.app/
+**Portfolio:** https://devxub-3d-portfolio.vercel.app/
 
 ---
 

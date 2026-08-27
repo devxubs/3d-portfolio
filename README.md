@@ -1,12 +1,12 @@
-# Syed Hassan Dildar - 3D Portfolio Website
+# Xubayer Ahmed — 3D Portfolio Website
 
-This repository contains the source code for my personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It includes animated page sections, a 3D character scene, custom cursor interactions, and smooth transitions designed for a modern portfolio experience.
+This repository contains the source code for my personal 3D portfolio website, built with React, TypeScript, Three.js, React Three Fiber, and GSAP. The portfolio is designed to showcase my skills, experience, projects, and creative work through a modern interactive interface with smooth animations and immersive 3D visuals.
 
-Live site: [https://hxnix-gold.vercel.app/](https://hxnix-gold.vercel.app/)
+## Live Website
 
-![Portfolio Preview](./public/images/preview.png)
+**Portfolio:** https://hxnix-gold.vercel.app/
 
-![QR Code](./public/images/qr-code.png)
+---
 
 ## Table of Contents
 
@@ -15,164 +15,476 @@ Live site: [https://hxnix-gold.vercel.app/](https://hxnix-gold.vercel.app/)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Available Scripts](#available-scripts)
-- [GSAP License Note](#gsap-license-note)
-- [Customization Guide](#customization-guide)
+- [Customization](#customization)
 - [Troubleshooting](#troubleshooting)
 - [Deployment](#deployment)
 - [License](#license)
 
+---
+
 ## Features
 
-- Responsive one-page portfolio layout with reusable section components.
-- 3D character scene rendering powered by React Three Fiber and Three.js.
-- GSAP-powered animations and transitions for interactive storytelling.
-- Custom cursor, hover interactions, and scroll-driven visual effects.
-- Organized component architecture with dedicated utilities and style modules.
+- Modern responsive one-page portfolio
+- Interactive 3D character experience
+- Smooth GSAP-powered animations
+- Scroll-based animations and transitions
+- Custom cursor interactions
+- Interactive hover effects
+- Responsive navigation
+- About Me section
+- Career / Experience section
+- Skills and technology showcase
+- Services / What I Do section
+- Featured projects and portfolio work
+- Contact section
+- Responsive design for desktop, tablet, and mobile devices
+- Reusable React components
+- TypeScript-based development
+- Optimized 3D scene and visual effects
+
+---
+
+## About Me
+
+I'm **Xubayer Ahmed**, a Full Stack Developer and Designer focused on building modern, interactive, and user-friendly digital experiences.
+
+I work primarily with modern web technologies including React, TypeScript, Next.js, Node.js, Express.js, databases, and modern UI frameworks.
+
+My goal is to create websites and applications that are not only functional but also visually engaging, fast, responsive, and enjoyable to use.
+
+---
 
 ## Tech Stack
 
-### Core
+### Frontend
 
-- React 18
+- React
 - TypeScript
+- JavaScript
+- HTML5
+- CSS3
 - Vite
+- Next.js
 
-### Animation and 3D
+### UI & Styling
 
-- GSAP + `@gsap/react`
+- Material UI
+- Tailwind CSS
+- DaisyUI
+- Responsive Design
+- Custom CSS Animations
+
+### Animation & 3D
+
+- GSAP
+- `@gsap/react`
 - Three.js
 - `@react-three/fiber`
 - `@react-three/drei`
 - `@react-three/postprocessing`
 - `@react-three/cannon`
 - `@react-three/rapier`
+- Framer Motion
 
-### Supporting Libraries
+### Backend
 
-- `react-icons`
-- `react-fast-marquee`
-- `@vercel/analytics`
+- Node.js
+- Express.js
+- REST APIs
+- Socket.IO
+
+### Database
+
+- MongoDB
+- MySQL
+- PostgreSQL
+- Supabase
+- Prisma
+- Mongoose
+- Sequelize
+
+### Other Tools
+
+- Git
+- GitHub
+- Vercel
+- Render
+- Supabase
+- VS Code
+
+---
 
 ## Project Structure
 
 ```text
 .
-├── public/                    # Static assets
+├── public/
+│   ├── images/
+│   ├── models/
+│   └── assets/
+│
 ├── src/
-│   ├── assets/                # Local media/assets
+│   ├── assets/
+│   │
 │   ├── components/
-│   │   ├── Character/         # 3D scene + character logic/utilities
-│   │   ├── styles/            # Section/component CSS files
+│   │   ├── Character/
+│   │   │   ├── 3D scene components
+│   │   │   └── character utilities
+│   │   │
+│   │   ├── styles/
+│   │   │   └── component styles
+│   │   │
 │   │   ├── About.tsx
 │   │   ├── Career.tsx
 │   │   ├── Contact.tsx
 │   │   ├── Landing.tsx
-│   │   ├── MainContainer.tsx  # Main page composition
+│   │   ├── MainContainer.tsx
 │   │   ├── Navbar.tsx
 │   │   ├── TechStack.tsx
 │   │   ├── WhatIDo.tsx
 │   │   └── Work.tsx
-│   ├── context/               # Global providers (loading state, etc.)
-│   ├── data/                  # Static data/content definitions
+│   │
+│   ├── context/
+│   │   └── global application state
+│   │
+│   ├── data/
+│   │   └── portfolio data
+│   │
+│   ├── utils/
+│   │   └── helper functions and animation utilities
+│   │
 │   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
 │   └── main.tsx
+│
 ├── package.json
-└── vite.config.ts
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
+
+---
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ (recommended)
-- npm 9+ (or compatible)
+Make sure you have the following installed:
+
+- Node.js 18 or later
+- npm 9 or later
+- Git
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
 
-   ```bash
-   git clone <your-repository-url>
-   cd 3d-portfolio
-   ```
+```bash
+git clone <your-repository-url>
+```
 
-2. Install dependencies:
+Navigate to the project directory:
 
-   ```bash
-   npm install
-   ```
+```bash
+cd <project-folder>
+```
 
-3. Start the local development server:
+Install dependencies:
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+```
 
-4. Open the URL shown in the terminal (typically `http://localhost:5173`).
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will normally be available at:
+
+```text
+http://localhost:5173
+```
+
+---
 
 ## Available Scripts
 
-- `npm run dev`  
-  Starts Vite dev server and exposes host for local network testing.
+### Development
 
-- `npm run build`  
-  Type-checks and builds a production-ready bundle.
+```bash
+npm run dev
+```
 
-- `npm run preview`  
-  Serves the production build locally for verification.
+Starts the Vite development server.
 
-- `npm run lint`  
-  Runs ESLint checks across the project.
+### Production Build
 
-## GSAP License Note
+```bash
+npm run build
+```
 
-This project uses the standard `gsap` package, including bonus plugins now available in the core package.
+Creates an optimized production build.
 
-- Install dependencies with `npm install`.
-- If migrating from older setups, remove `gsap-trial` from your project.
+### Preview
 
-Read official installation guidance here: [GSAP Installation Docs](https://gsap.com/docs/v3/Installation/)
+```bash
+npm run preview
+```
 
-## Customization Guide
+Runs the production build locally for testing.
 
-You can adapt this portfolio to your own profile by updating the following areas:
+### Lint
 
-- **Content sections**: Edit files in `src/components/` such as `About.tsx`, `Career.tsx`, `WhatIDo.tsx`, and `Work.tsx`.
-- **Data source**: Update static values in files under `src/data/`.
-- **Styling**: Modify component styles in `src/components/styles/` and global styles in `src/index.css` / `src/App.css`.
-- **3D scene behavior**: Adjust scene logic in `src/components/Character/` and related utilities.
-- **Animations**: Tweak GSAP utilities under `src/components/utils/`.
+```bash
+npm run lint
+```
+
+Runs ESLint and checks the project for code-quality issues.
+
+---
+
+## Customization
+
+The portfolio is structured so that the content can be easily customized.
+
+### Personal Information
+
+Update your personal information inside the relevant components and data files.
+
+Common areas include:
+
+```text
+src/components/About.tsx
+src/components/Career.tsx
+src/components/Contact.tsx
+src/components/Landing.tsx
+```
+
+### Projects
+
+Portfolio projects can be managed from:
+
+```text
+src/components/Work.tsx
+src/data/
+```
+
+Update project titles, descriptions, technologies, images, links, and other project information there.
+
+### Skills & Technologies
+
+Technology and skill information can be updated from:
+
+```text
+src/components/TechStack.tsx
+```
+
+### Services
+
+Update the services and development capabilities from:
+
+```text
+src/components/WhatIDo.tsx
+```
+
+### Styling
+
+Component-specific styles are organized inside:
+
+```text
+src/components/styles/
+```
+
+Global styling can be modified through:
+
+```text
+src/index.css
+src/App.css
+```
+
+### 3D Character
+
+The 3D character and scene behavior can be customized inside:
+
+```text
+src/components/Character/
+```
+
+This area contains the logic responsible for rendering and controlling the 3D experience.
+
+### Animations
+
+GSAP animations and related utilities can be customized inside the animation utility files.
+
+You can modify:
+
+- Scroll animations
+- Page transitions
+- Character movement
+- Hover effects
+- Timeline animations
+- Section transitions
+
+---
+
+## Performance
+
+Because the portfolio uses Three.js, React Three Fiber, post-processing, and GSAP animations, performance can vary depending on the device.
+
+For better performance on low-end devices:
+
+- Reduce 3D model complexity
+- Reduce texture sizes
+- Limit post-processing effects
+- Reduce unnecessary animation loops
+- Optimize large images and videos
+- Lazy-load heavy assets
+- Avoid unnecessary React re-renders
+
+---
 
 ## Troubleshooting
 
-- **Blank screen in development**  
-  Check browser console for module import errors and verify all dependencies are installed.
+### Blank Screen
 
-- **3D performance issues on low-end devices**  
-  Reduce scene complexity and post-processing effects in the character/scene utilities.
+If the application shows a blank screen:
 
-- **GSAP plugin errors**  
-  Ensure you have the correct plugin package and license configuration for your target environment.
+1. Check the browser console.
+2. Check for incorrect imports.
+3. Verify that all dependencies are installed.
+4. Run:
 
-- **TypeScript build failures**  
-  Run `npm run build` and address reported type errors before deploying.
+```bash
+npm install
+npm run build
+```
+
+### GSAP Target Not Found
+
+If you see an error such as:
+
+```text
+GSAP target not found
+```
+
+make sure the target element exists before the animation runs and that the selector or React ref points to the correct element.
+
+### 3D Scene Not Loading
+
+Check:
+
+- 3D model paths
+- Texture paths
+- Browser console errors
+- Three.js dependencies
+- Public asset paths
+
+For assets inside `public/`, use paths relative to the public root:
+
+```text
+/assets/example.png
+```
+
+instead of:
+
+```text
+/public/assets/example.png
+```
+
+### TypeScript Errors
+
+Run:
+
+```bash
+npm run build
+```
+
+This will reveal TypeScript and production build errors that should be fixed before deployment.
+
+---
 
 ## Deployment
 
-1. Create a production build:
+This project uses **Vite**, so it can be deployed to modern static hosting platforms.
 
-   ```bash
-   npm run build
-   ```
+### Vercel
 
-2. Validate locally:
+Build the project:
 
-   ```bash
-   npm run preview
-   ```
+```bash
+npm run build
+```
 
-3. Deploy the generated `dist/` folder to your hosting provider (for example Vercel, Netlify, or Cloudflare Pages).
+The production files will be generated inside:
+
+```text
+dist/
+```
+
+For Vercel, the framework should be configured as a Vite project with:
+
+```text
+Build Command: npm run build
+Output Directory: dist
+```
+
+### Other Hosting Platforms
+
+The generated `dist/` directory can also be deployed to platforms such as:
+
+- Vercel
+- Netlify
+- Cloudflare Pages
+- Other static hosting providers
+
+---
+
+## Environment Variables
+
+If the project uses external APIs or backend services, configure environment variables through a `.env` file.
+
+Example:
+
+```env
+VITE_API_URL=your_backend_api_url
+```
+
+Never commit private API keys, database passwords, service-role keys, JWT secrets, or other sensitive credentials to GitHub.
+
+---
+
+## Design Philosophy
+
+The portfolio focuses on combining:
+
+- Clean modern UI
+- Interactive 3D elements
+- Smooth motion
+- Strong typography
+- Minimal visual clutter
+- Responsive layouts
+- Fast interactions
+- Developer-focused presentation
+
+The goal is to create a portfolio that communicates both **technical ability and creative design skills** rather than functioning as a traditional static portfolio.
+
+---
+
+## Author
+
+**Xubayer Ahmed**
+
+Full Stack Developer & Designer
+
+Focused on building modern web applications, interactive interfaces, and digital experiences.
+
+---
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is available under the MIT License.
+
+You are free to use, modify, and adapt the project according to the terms of the license.
